@@ -1,0 +1,38 @@
+@mixin header-container($align: center, $jusfity: space-between) {
+  display: flex;
+  align-items: $align;
+  justify-content: $jusfity;
+}
+@mixin navbar($align: center, $gap: 100px) {
+  display: flex;
+  align-items: $align;
+  gap: $gap;
+}
+@mixin booking-link($align: center, $gap: 10px) {
+  display: flex;
+  align-items: $align;
+  gap: $gap;
+}
+@mixin hero-title(
+  $size: 44px,
+  $weight: 900,
+  $width: 696px,
+  $transform: uppercase,
+  $color: $primary-white-color
+) {
+  font-size: $size;
+  font-weight: $weight;
+  width: $width;
+  text-transform: $transform;
+  color: $color;
+}
+@mixin feature-list__icon($aling: center, $justify: center, $height: 120px) {
+  display: flex;
+  align-items: $aling;
+  justify-content: $justify;
+  height: $height;
+}
+@mixin flexfeature($gap: 30px) {
+  display: flex;
+  gap: $gap;
+}

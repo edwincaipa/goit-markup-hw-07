@@ -1,0 +1,48 @@
+.footer {
+  padding: 60px 0;
+  height: 252px;
+  background-color: $background-black;
+}
+
+.logo {
+  @extend %navbar__logo;
+  display: block;
+  margin-bottom: 20px;
+}
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $primary-white-color;
+  margin-bottom: 5px;
+}
+.contact__footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $gray-2;
+  margin-bottom: 5px;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer-flexbox {
+  display: flex;
+  gap: 50px;
+}
+.footer-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-list-item {
+  display: flex;
+  gap: 20px;
+}

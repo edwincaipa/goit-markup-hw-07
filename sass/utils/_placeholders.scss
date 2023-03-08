@@ -1,0 +1,77 @@
+// Header Seccion//
+%header {
+  border: 1px solid $folio-border;
+  height: 80px;
+}
+%navbar__logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  color: $accent-color;
+}
+%navbar__menu {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  list-style: none;
+  gap: 80px;
+}
+%navbar__link {
+  color: $primary-black-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: capitalize;
+  position: relative;
+  cursor: pointer;
+}
+%booking {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+}
+%booking__link {
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  height: 20px;
+}
+
+// Hero Seccion//
+%hero__button-primary {
+  background-color: $accent-color;
+  color: $primary-white-color;
+  font-size: 16px;
+  width: 300px;
+  height: 50px;
+
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 10px 20px;
+}
+
+//Features
+%feature-list__title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-black-color;
+  margin-bottom: 10px;
+}
+%feature-list__desciption {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  color: $primary-text-color;
+}

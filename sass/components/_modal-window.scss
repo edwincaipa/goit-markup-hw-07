@@ -1,0 +1,28 @@
+.modal {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 528px;
+  height: 580px;
+  background: $primary-white-color;
+  transform: translateY(0);
+  transition: transform 500ms ease-out;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &:hover {
+    fill: $accent-color;
+    transform: rotate(360deg);
+    transition: transform 500ms ease;
+  }
+}

@@ -1,0 +1,19 @@
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px $gray-2;
+  border-radius: 5px;
+  width: 170px;
+  height: 92px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $accent-color;
+  }
+}
+

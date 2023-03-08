@@ -1,0 +1,19 @@
+.images-wedo {
+  display: flex;
+  gap: 30px;
+}
+.images-wedo__item {
+  flex-basis: calc((100% - 90px) / 3);
+  position: relative;
+  .images-wedo__title {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    text-align: center;
+    padding: 27px;
+    width: 373px;
+    height: 70px;
+    color: $primary-white-color;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}

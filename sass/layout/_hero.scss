@@ -1,0 +1,24 @@
+/* ----------- Hero section ----------- */
+.hero {
+  background-image: linear-gradient(to right, ($base-color), ($base-color)),
+    url(../images/Img_Hero.svg);
+
+  padding: 205px $container-padding;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.hero__title {
+  @include hero-title(44px, 900, 696px, uppercase);
+
+  margin: 20px auto;
+}
+.hero__button-primary {
+  @extend %hero__button-primary;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $accent-color;
+  }
+}

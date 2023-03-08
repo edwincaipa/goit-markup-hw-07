@@ -1,0 +1,20 @@
+.features {
+  @include flexfeature(30px);
+
+  .feature-list__item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+
+.feature-list__icon {
+  @include feature-list__icon(center, center, 120px);
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.feature-list__title {
+  @extend %feature-list__title;
+}
+.feature-list__desciption {
+  @extend %feature-list__desciption;
+}

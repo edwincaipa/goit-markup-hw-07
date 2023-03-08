@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.min.css" />
+  <title>Web Studio</title>
+</head>
+
+<body>
+  <!-- Header section -->
+  <header class="header">
+    <div class="container header-container">
+      <nav class="navbar">
+        <!-- Logo -->
+        <a class="navbar__logo" href="index.html">WebStudio</a>
+        <!-- Menu -->
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="index.html">Estudio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link current" href="portfolio.html">Portafolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href=" index.html">Contactos</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Contacts -->
+      <ul class="booking">
+        <li>
+          <a class="booking__link" href="#">
+            <svg class="booking__icon email">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li>
+          <a class="booking__link" href="#">
+            <svg class="booking__icon smartphone">
+              <use href="./images/icons.svg#smartphone"></use>
+            </svg>
+            +52 55 55 29 60 00
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <!-- Filters and PortFolio -->
+    <section class="section filter">
+      <div class="container">
+        <h2 hidden>Portafolio</h2>
+        <!-- Menu tabs  -->
+        <ul class="filters-list">
+          <li>
+            <button class="filter__buttons filter__current" type="button">Todo</button>
+          </li>
+          <li>
+            <button class="filter__buttons" type="button">Sitios-web</button>
+          </li>
+          <li class="filter__items">
+            <button class="filter__buttons" type="button">Aplicaciones</button>
+          </li>
+          <li>
+            <button class="filter__buttons" type="button">Diseño</button>
+          </li>
+          <li>
+            <button class="filter__buttons" type="button">Marketing</button>
+          </li>
+        </ul>
+        <!-- PortFolio -->
+        <h2 hidden>Portafolio</h2>
+        <!-- card list  -->
+        <ul class="portfolio-list">
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <img src="images/Portafolio1.jpg" width="340" alt="TecnoCrack website" />
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto.
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Tecnoduck</h2>
+              <p class="portfolio-text">Sitio-web</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <img src="images/Portafolio2.jpg" width="340" alt="Poster New Orlean vs Golden Star" />
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto.
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">
+                Poster New Orlean vs Golden Star
+              </h2>
+              <p class="portfolio-text">Design</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <img src="images/Portafolio3.jpg" width="340" alt="Seafood Restaurant App" />
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto.
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Seafood Restaurant</h2>
+              <p class="portfolio-text">App</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <img src="images/Portafolio4.jpg" width="340" alt="Project Prime Marketing" />
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto.
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Project Prime</h2>
+              <p class="portfolio-text">Marketing</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <img src="images/Portafolio5.jpg" width="340" alt="Project Boxes App" />
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto.
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Project Boxes</h2>
+              <p class="portfolio-text">App</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <img src="images/Portafolio6.jpg" width="340" alt="Inspiration has no Borders" />
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Inspiration has no Borders</h2>
+              <p class="portfolio-text">App</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href=" #" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <img src="images/Portafolio7.jpg" width="340" alt="Limited Edition Design" />
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Limited Edition</h2>
+              <p class="portfolio-text">Design</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <img src="images/Portafolio8.jpg" width="340" alt="Project LAB MArketin" />
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Project LAB</h2>
+              <p class="portfolio-text">Marketing</p>
+            </a>
+          </li>
+
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio__link">
+              <div class="portfolio-list__thumb">
+                <img src="images/Portafolio19.jpg" width="340" alt="Growing Bussines App" />
+                <div class="portfolio-list__effect">
+                  <p class="portfolio-list__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat laudantium natus, vero fugiat sed laborum dolorum
+                    sapiente provident hic asperiores reprehenderit quis qui
+                    numquam magnam autem, mollitia suscipit porro architecto
+                  </p>
+                </div>
+              </div>
+              <h2 class="portfolio-title">Growing Bussines</h2>
+              <p class="portfolio-text">App</p>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+
+    </section>
+  </main>
+
+  <!--footer-->
+  <footer class="footer">
+    <div class="container footer-flexbox">
+      <div>
+        <a class="logo" href="">WebStudio</a>
+        <address class="address">
+          <a class="address" href="https://goo.gl/maps/dBykvgHUBU18GHkaA" target="_blank">Calz.Ticomán 500, Ciudad
+            de
+            México</a>
+        </address>
+        <ul class="contact">
+          <li class="contact__item">
+            <a class="contact__footer" href="mailto:info@example.com">info@example.com</a>
+          </li>
+          <li class="contact__item">
+            <a class="contact__footer" href="tel:+525555296000">+52 55 55 29 60 00</a>
+          </li>
+        </ul>
+        </address>
+      </div>
+      <div class="footer-social-links">
+        <h2 class="footer-title">encuentrenos en</h2>
+        <ul class="footer-list-item">
+          <li>
+            <a class="footer-icons" href="#">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-icons" href="#">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-icons" href="#">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-icons" href="#">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-form">
+        <p class="footer-title footer-form__head">suscribase al boletin informativo</p>
+        <form action="#" class="footer-form__modal">
+          <label class="footer-form__email-label">
+            <input class="footer-form__modal-input" type="email" name="email-name" placeholder="E-mail" required>
+          </label>
+          <button type="submit" class="hero__button-primary footer-form__btn">
+            suscribase
+            <svg class="icon-suscribe" width="24" height="24">
+              <use href="./images/icons.svg#icon-subscribe"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
