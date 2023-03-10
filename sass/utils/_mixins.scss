@@ -36,3 +36,79 @@
   display: flex;
   gap: $gap;
 }
+@mixin images-wedo($gap: 30px) {
+  display: flex;
+  gap: $gap;
+}
+@mixin team($background-color: $background-light) {
+  background-color: $background-color;
+}
+@mixin team-members($gap: 30px) {
+  display: flex;
+  gap: $gap;
+}
+@mixin box-shadow($horiz: 0px, $vert: 1px, $blur: 3px) {
+  -webkit-box-shadow: $horiz $vert $blur rgba(0, 0, 0, 0.122);
+  -moz-box-shadow: $horiz $vert $blur rgba(0, 0, 0, 0.122);
+  box-shadow: $horiz $vert $blur rgba(0, 0, 0, 0.122),
+    $horiz $vert $blur rgba(0, 0, 0, 0.14),
+    $horiz $vert $blur rgba(0, 0, 0, 0.2);
+}
+@mixin border-radius($value: 0px 4px) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+@mixin teamcard-links($aling: center, $justify: center, $gap: 15px) {
+  display: flex;
+  align-items: $aling;
+  justify-content: $justify;
+  gap: $gap;
+}
+@mixin clients-list($justify: space-between) {
+  display: flex;
+  justify-content: $justify;
+}
+
+@mixin clients-list__item($aling: center, $justify: center) {
+  display: flex;
+  align-items: $aling;
+  justify-content: $justify;
+}
+@mixin footer-flexbox($gap: 50px) {
+  display: flex;
+  gap: $gap;
+}
+@mixin footer-form__btn($align: center, $justify: center) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+@mixin modal-form($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+}
+@mixin modal-form-label-checkbox($aling: center, $justify: center) {
+  display: flex;
+  align-items: $aling;
+  justify-content: $justify;
+}
+@mixin modal-form-submit($aling: center, $justify: center) {
+  display: flex;
+  align-items: $aling;
+  justify-content: $justify;
+}
+@mixin filters-list($justify: center, $gap: 20px, $mb: 50px) {
+  display: flex;
+  justify-content: $justify;
+  gap: $gap;
+  margin-bottom: $mb;
+}
+@mixin portfolio-list($flex: wrap, $gap: 30px) {
+  display: flex;
+  flex-wrap: $flex;
+  gap: $gap;
+}

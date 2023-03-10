@@ -1,40 +1,21 @@
 .modal-form {
-  display: flex;
-  flex-direction: column;
+  @include modal-form(column);
   padding: 40px;
 }
 
 .modal-form-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 1.15;
-  text-align: center;
-  color: $primary-black-color;
-  margin-bottom: 12px;
+  @extend %modal-form-title;
 }
 
 .modal-form__label {
-  font-style: normal;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
-  position: relative;
-  width: 448px;
-  margin-bottom: 14px;
+  @extend %modal-form-label;
 
   &:focus-within {
     fill: $accent-color;
   }
 
   .modal-form__input {
-    width: 100%;
-    padding: 12px 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    cursor: pointer;
+    @extend %modal-form__input;
 
     &:hover,
     &:focus {
@@ -45,32 +26,15 @@
 }
 
 .modal-form__icon {
-  position: absolute;
-  display: block;
-  top: 35px;
-  left: 12px;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
+  @extend %modal-form__icon;
 }
 
 .modal-form-field {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: $primary-text-color;
+  @extend %modal-form-field;
 }
 
 .modal-form-message {
-  width: 448px;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  resize: none;
-  padding: 12px 16px;
-  margin-top: 4px;
+  @extend %modal-form-message;
 
   &:focus {
     outline: none;
@@ -86,31 +50,15 @@
   }
 }
 .modal-form-checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  @extend %modal-form-checkbox;
 }
 .modal-form-label-checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-weight: 400;
-  line-height: 1.71;
-  margin-bottom: 20px;
-  cursor: pointer;
+  @include modal-form-label-checkbox(center, center);
+  @extend %modal-form-label-checkbox;
 }
 
 .modal-form-icon-check {
-  width: 16px;
-  height: 15px;
-  border: 2px solid $primary-black-color;
-  border-radius: 2px;
-  margin-right: 7px;
+  @extend %modal-form-icon-check;
 }
 .modal-form-label-checkbox:hover .modal-form-icon-check {
   background-color: rgba(126, 122, 122, 0.1);
@@ -142,26 +90,6 @@
   color: $accent-color;
 }
 .modal-form-submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-
-  width: 200px;
-  height: 50px;
-  padding: 10px 55px;
-  cursor: pointer;
-
-  color: $primary-white-color;
-  background-color: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 1px solid transparent;
-  border-radius: 4px;
-
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  outline: transparent;
+  @include modal-form-submit(center, center);
+  @extend %modal-form-submit;
 }
