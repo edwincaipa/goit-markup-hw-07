@@ -124,6 +124,8 @@
   line-height: 1.71;
   color: #ffffff;
   margin-bottom: 5px;
+  width: 231px;
+  display: inline-block;
 }
 
 .contact__footer {
